@@ -8,7 +8,7 @@
 
 .App {
   position: relative; /* solved footer*/
-  min-height: 95vh; /* solved footer*/
+  min-height: 93.4vh; /* solved footer*/
   text-align: center;
   font-family: 'Nunito', sans-serif;
   padding-bottom: 2.5rem; /* solved footer*/
@@ -16,7 +16,7 @@
 
 .container {
   width: 50%;
-  margin: 3rem auto;
+  margin: 3rem auto 0;
   text-align: left;
 }
 
@@ -62,4 +62,33 @@ hr {
   padding: 1.5rem;
   text-align: center;
   font-size: 1.5rem;
+}
+
+@media screen and (max-width: 767px) {
+  .App {
+    min-height: 92.3vh;
+  }
+  .container {
+    width: 100%;
+    text-align: center;
+  }
+  .small {
+    font-size: large;
+  }
+  .btn-container {
+    width: 90%;
+    margin: 4rem auto 0;
+    justify-content: center;
+    align-content: center;
+  }
+  .card {
+    border-radius: 0;
+  }
+  hr {
+    display: none;
+  }
+  .footer {
+    width: 100%;
+    border-radius: 0;
+  }
 }

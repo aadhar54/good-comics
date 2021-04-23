@@ -14,7 +14,7 @@ export default function App() {
   return (<div className="App">
             <div className="container">
               <h1>Indian Comics 🎭</h1>
-              <small>Checkout my favorite Indian comics. Select a genre to get started</small>
+              <small className="small">Checkout my favorite Indian comics. Select a genre to get started</small>
               <div className="btn-container">
               {genresNames.map((genre)=>{
                 return (<span onClick={()=>{onClickHandler(genre)}} className="span-btn">{genre}</span>)
