@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;1,200;1,400&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  position: relative; /* solved footer*/
+  min-height: 95vh; /* solved footer*/
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  padding-bottom: 2.5rem; /* solved footer*/
+}
+
+.container {
+  width: 50%;
+  margin: 3rem auto;
+  text-align: left;
+}
+
+.btn-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+}
+
+hr {
+  margin-bottom: 1rem;
+}
+
+.span-btn {
+  text-align: center;
+  min-width: 4rem;
+  padding: 0.5rem 1rem;
+  background-color: #dc2626;
+  border: 2px solid black;
+  border-radius: 1rem;
+  margin: 0 1rem 1rem 0;
+  cursor: pointer;
+}
+
+.card-container {
+  margin-bottom: 5rem;
+}
+
+.card {
+  padding: 1rem;
+  background-color: #93c5fd;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footer {
+  width: 50%;
+  background-color: #dc2626;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  position: absolute; /* solved footer*/
+  bottom: 0; /* solved footer*/
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
