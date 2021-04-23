@@ -1,4 +1,4 @@
-# Fun Animal : An Emojie Story 🦧
+# Good Comics in Comedy Genres : Yes , comedy has genres ...
 
 This is a website made with ❤️ and React JS . The concept of functional components , react hooks and useState has been implemented here . 
 This provides the list of top 4 Indian comedians in different genres of Comedy .
