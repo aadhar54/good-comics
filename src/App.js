@@ -5,7 +5,7 @@ import { genreList ,descriptionsList} from './comedyGenres'
 let genresNames = Object.keys(genreList);
 
 export default function App() {
-  const [comicArray, setComicArray] = useState([]);
+  const [comicArray, setComicArray] = useState(genreList[genresNames[0]]);
 
   function onClickHandler(genre){
     setComicArray(genreList[genre]);
@@ -16,9 +16,9 @@ export default function App() {
               <h1>Indian Comics 🎭</h1>
               <small className="small">Checkout my favorite Indian comics. Select a genre to get started</small>
               <div className="btn-container">
-              {genresNames.map((genre)=>{
-                return (<span onClick={()=>{onClickHandler(genre)}} className="span-btn">{genre}</span>)
-              })}
+                {genresNames.map((genre)=>{
+                  return (<span onClick={()=>{onClickHandler(genre)}} className="span-btn">{genre}</span>)
+                })}
               </div>
               <hr/>
               <div className="card-container">{(comicArray).map((comic)=>{
